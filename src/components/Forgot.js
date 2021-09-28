@@ -47,7 +47,7 @@ const Forgot = () => {
                                             name="email"
                                             className="form-control"
                                             type="email" />
-                                        <ErrorMessage name="email" />
+                                        <div className="error"><ErrorMessage name="email"/></div>
                                     </div>
                                     <div className="loginbtnrow">
                                         <button

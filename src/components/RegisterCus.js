@@ -4,7 +4,7 @@ import { Form, Field, Formik, ErrorMessage, } from "formik";
 import * as Yup from "yup";
 
 
-const Register = () => {
+const Customer = () => {
 
   const initialValues = {
     first: '',
@@ -63,7 +63,7 @@ const Register = () => {
     <div>
       <div class="pgaddressrow">
         <h1 class="heading">Login / Register</h1>
-        <h4 class="smheading"><a href="/home">Home</a> / Register / <a href="/login">login</a></h4>
+        <h4 class="smheading"><a href="/">Home</a> / Register / <a href="/login">login</a></h4>
       </div>
       <div class="loginformCon signup">
         <h4>HELLO</h4>
@@ -135,7 +135,8 @@ const Register = () => {
                         <Field
                           name="shopurl"
                           class="form-control"
-                          type="text" placeholder="" />
+                          type="text" placeholder="" 
+                          disabled/>
                         <div className="error"><ErrorMessage name="shopurl" /></div>
                       </div>
                     </div>
@@ -158,7 +159,8 @@ const Register = () => {
                       <label>Shop Name</label>
                       <Field
                         name="shopname"
-                        class="form-control"></Field>
+                        class="form-control"
+                        disabled/>
                       <div className="error"><ErrorMessage name="shopname" /></div>
                     </div>
                   </div>
@@ -174,7 +176,7 @@ const Register = () => {
                         type="radio"
                         name="radio-group "
                         style={{ "marginRight": "5px" }} />  */}
-                        <a href="/customer">I am a customer</a>
+                        <a href="/vendor">I am a Vendor</a>
                         
                     </div>
                     <div class="chooseone" style={{ "display": "inline-block", "verticalAlign": "middle", "marginLeft": "20px" }}>
@@ -183,7 +185,7 @@ const Register = () => {
                         name="radio-group vendor"
                         style={{ "marginRight": "5px" }} />  */}
                         <div className="error"><ErrorMessage name="user"/></div>
-                        <Field type="radio" name="user" value="vendor" /> I am a vendor 
+                        <Field type="radio" name="user" value="Customer" /> I am a Customer 
                     </div>
 
                   </div>
@@ -211,4 +213,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Customer

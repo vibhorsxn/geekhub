@@ -1,10 +1,13 @@
 .Nav__head{
     display: flex;
     justify-content: space-between;
-    padding: 2%;
+    /* padding: 2%; */
     border-bottom: 2px solid black ;
     }
-    
+.Nav__head .bg-light {
+    --bs-bg-opacity: 0 !important;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
     /* Navbar Links */
     .Nav__links ul{
         text-decoration: none;

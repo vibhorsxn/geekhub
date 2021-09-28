@@ -112,3 +112,6 @@
 	color: #feb600;
 	display: inline-block;
 }
+.error{
+	color: red;
+}

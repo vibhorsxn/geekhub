@@ -1,6 +1,6 @@
 import React from 'react'
 import "../style/Login.css";
-import axios from 'axios';
+// import axios from 'axios';
 import { Formik, Field, Form,ErrorMessage} from "formik";
 import * as Yup from "yup";
 
@@ -12,56 +12,60 @@ const Login = () => {
     rememberMe:false
   }
   const validationSchema = Yup.object().shape({
-    email : Yup.string().email("Enter valid Email").required("Required"),
+    // email : Yup.string().email("Enter valid Email").required("Required"),
+    email:Yup.string()
+    .required("Required")
+    .min(3, "Too short Name"),
 
     password: Yup.string().min(8, "Password minimum length should be 8").required("Required")
-    .matches(/(?=.*[0-9])/, "Password must contain a number."),
+    //.matches(/'^(?=.*?[A-Za-z])(?=.*?[0-9]).{6,}$'/, "Password must contain a number."),
 
-    rememberMe: Yup.string().oneOf(["true"], "Accept terms & conditions")
+    // rememberMe: Yup.string().oneOf(["true"], "Accept terms & conditions")
   })
 
   const onSubmit=(values,props)=>{
-    return axios({
-      method: "POST",
-      url: "http://3.109.247.241:6678/api/auth/login",
-      data: values,
-      // auth: {
-      //   email,
-      //   password
-      // }
-    })
-    .then(response => {
-      props.setSubmitting(false);
-      props.resetForm();
+    console.log(values);
+    
+        setTimeout(() => {
+
+            props.resetForm()
+            props.setSubmitting(false)
+        }, 2000)
+      };
+    
+      // API implementation
+
+// return axios({
+    //   method: "POST",
+    //   url: "http://3.109.247.241:6678/api/auth/login",
+    //   data: values,
+    //   // auth: {
+    //   //   email,
+    //   //   password
+    //   // }
+    // })
+    // .then(response => {
+    //   props.setSubmitting(true);
+    //   props.resetForm();
+    //   console.log("You are logged in")
      
-    })
-    .catch(error => {
-      props.setSubmitting(false);
+    // })
+    // .catch(error => {
+    //   props.setSubmitting(false);
       
-    });
+    // });
   
     // this shouldn't be outside the .then/.catch
     // if you are going to use .then/.catch, put the above line inside it
     // authenticate.login();
-    // Router.push("/")
-  };
-    
-
-
-  // console.log(values);
-    
-  //       setTimeout(() => {
-
-  //           props.resetForm()
-  //           props.setSubmitting(false)
-  //       }, 2000)
+    // Router.push("/")  
 
   return (
     <div>
 
       <div className="pgaddressrow">
         <h1 className="heading">Login / Register</h1>
-        <h4 className="smheading"><a href=" ">Home</a> / login / <a href=" ">Register</a></h4>
+        <h4 className="smheading"><a href="/">Home</a> / login / <a href="/customer">Register</a></h4>
       </div>
 
       <div className="loginformCon">
@@ -79,11 +83,13 @@ const Login = () => {
                   <label>Username or email address</label>
 
                   <Field 
+                  // onChange={Formik.handleChange}
+                  // value={Formik.values.email}
                   name="email"
                   className="form-control" 
-                  type="email"
+                  type="text"
                    />
-                   <ErrorMessage name="email" />
+                   <div className="error"><ErrorMessage name="email"/></div>
                 </div>
               
 
@@ -94,7 +100,7 @@ const Login = () => {
                   name="password"
                   className="form-control" 
                   type="password" />
-                  <ErrorMessage name="password"/>
+                  <div className="error"><ErrorMessage name="password"/></div>
 
                 </div>
 
@@ -113,7 +119,7 @@ const Login = () => {
                 </div>
                 <div 
                 className="lostyourpasswordrw">
-                  <a href=" ">Lost your password?</a></div>
+                  <a href="/forgot">Lost your password?</a></div>
               </div>
 
             </Form>

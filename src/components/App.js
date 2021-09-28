@@ -7,9 +7,14 @@ import Home from "./Home";
 import RegisterCus from "./RegisterCus";
 
 function App() {
-  return (
+  return (  
     <>
-    <Router>
+    <Nav/>
+    <Login/>
+    <Register/>
+    <Forgot/>
+    <RegisterCus/>
+    {/* <Router>
       <Nav />  
       <Switch>
       <Route path="/"  exact component={Home} />
@@ -18,7 +23,7 @@ function App() {
         <Route path="/vendor" component={Register} />
         <Route path="/forgot" component={Forgot} />
       </Switch>
-    </Router>
+    </Router> */}
     </>
   );
 }

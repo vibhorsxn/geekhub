@@ -38,7 +38,7 @@ const Customer = () => {
       .required("Required")
       .matches(/((https?):\/\/)?(www.)?[a-z0-9-]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#-]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/, "Website should be a valid URL"),
 
-    phoneno: Yup.number().typeError("Enter valid Phone Number").required('Required'),
+    
 
     shopname: Yup.string()
 
@@ -149,7 +149,7 @@ const Customer = () => {
                           class="form-control"
                           type="text" placeholder="" 
                           disabled/>
-                        <div className="error"><ErrorMessage name="phoneno" /></div>
+                        
                       </div>
                     </div>
                   </div>

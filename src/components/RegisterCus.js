@@ -63,7 +63,7 @@ const Customer = () => {
     <div>
       <div class="pgaddressrow">
         <h1 class="heading">Login / Register</h1>
-        <h4 class="smheading"><a href="/">Home</a> / Register / <a href="/login">login</a></h4>
+        <h4 class="smheading"><a style={{textDecoration:"none"}} href="/">Home</a> / Register / <a style={{textDecoration:"none"}} href="/login">login</a></h4>
       </div>
       <div class="loginformCon signup">
         <h4>HELLO</h4>
@@ -193,7 +193,7 @@ const Customer = () => {
 
                 <div class="signupterms">
                   Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our 
-                  <a href=" ">privacy policy.</a>
+                  <a href=" "> privacy policy.</a>
                 </div>
                 <div class="loginbtnrow">
                   <button

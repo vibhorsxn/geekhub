@@ -1,0 +1,44 @@
+/*profle start*/
+
+.profilinputs{
+    max-width: 1000px;
+    padding: 40px 50px;
+    margin: 30px auto;
+    background-color: #f8f8f8;
+  }
+
+.col-ting {
+    width: 25em;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  
+  .file-upload .image-box {
+    margin: 0 auto;
+    margin-top: 1em;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background: #ffb700;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .file-upload .image-box img {
+    height: 100%;
+    display: none;
+  }
+  .file-upload .image-box p {
+    position: relative;
+    top: 45%;
+    color: #fff;
+  }
+  .paratrxt{
+    font-size: 20px;
+    font-family: 'Raleway-SemiBold';
+  }
+  .phoneconbox .paranumar{
+      font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  /*profle and*/

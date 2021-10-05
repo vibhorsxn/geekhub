@@ -2,10 +2,11 @@ import React from 'react';
 import '../style/Navbar.css';
 import {Navbar,Container} from 'react-bootstrap';
 import logo from "../assets/images/logo.png";
+
 const Nav = () => {
     return (
         <div className="Nav__head">
-         
+     
         <Navbar  bg="light">
         <Container>
           <Navbar.Brand href="#home">
@@ -18,11 +19,13 @@ const Nav = () => {
             />
 
           </Navbar.Brand>
-        </Container>
+          </Container>
         </Navbar>
+        
         <div className="Nav__links">
         <ul>
-          <li>Home</li>
+          
+          <li><a href="/home">Home</a></li>
           <li>About us</li>
           <li>Latest Products</li>
           <li>Contact us</li>
@@ -42,7 +45,7 @@ const Nav = () => {
           </div>
           <div className="icon__name">
         <ul>
-          <li>Account</li>
+          <li><a href="/profile">Account</a></li>
           <li>Wishlist</li>
           <li>Cart</li>
           <li>Search</li>
@@ -50,7 +53,9 @@ const Nav = () => {
         </div>
 
         </div>
+        
 
+        
         
         </div>
     )

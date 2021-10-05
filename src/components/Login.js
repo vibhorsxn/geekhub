@@ -3,9 +3,12 @@ import "../style/Login.css";
 // import axios from 'axios';
 import { Formik, Field, Form,ErrorMessage} from "formik";
 import * as Yup from "yup";
+import PropTypes from 'prop-types';
 
-const Login = () => {
+const Login = ({setToken}) => {
 
+  
+  
   const initialValues={
     email:'',
     password:'',
@@ -83,8 +86,7 @@ const Login = () => {
                   <label>Username or email address</label>
 
                   <Field 
-                  // onChange={Formik.handleChange}
-                  // value={Formik.values.email}
+                  
                   name="email"
                   className="form-control" 
                   type="text"
@@ -132,6 +134,9 @@ const Login = () => {
 
     </div>
   )
+}
+Login.propTypes = {
+  setToken: PropTypes.func.isRequired
 }
 
 export default Login

@@ -6,8 +6,9 @@ import '../style/Login.css';
 // http://3.109.247.241:6678/api/auth/login imohit; mohit1234
 
 async function loginUser(credentials) {
-  return fetch('http://3.109.247.241:6678/api/auth/login:splat 200!', {
+  return fetch('http://3.109.247.241:6678/api/auth/login:splat', {
     method: 'POST',
+    status:200,
     headers: {
       'Content-Type': 'application/json'
     },

@@ -42,9 +42,12 @@ const Register = () => {
       .matches(
         /((https?):\/\/)?(www.)?[a-z0-9-]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#-]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,"Website should be a valid URL"),
 
+<<<<<<< HEAD
     phoneno: Yup.number()
       .typeError("Enter valid Phone Number")
       .required("*Required"),
+=======
+>>>>>>> b25d3fa2f38240b59e46d7e841fe8413caa6d9c4
 
     shopname: Yup.string()
 
@@ -207,6 +210,7 @@ const Register = () => {
                         <Field
                           name="username"
                           class="form-control"
+<<<<<<< HEAD
                           type="text"
                           placeholder="Username"
                         />
@@ -214,6 +218,11 @@ const Register = () => {
                         <div className="error">
                           <ErrorMessage name="username" />
                         </div>
+=======
+                          type="text" placeholder="" 
+                          disabled/>
+                        
+>>>>>>> b25d3fa2f38240b59e46d7e841fe8413caa6d9c4
                       </div>
                     </div>
                   </div>

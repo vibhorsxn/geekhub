@@ -34,17 +34,6 @@ const Customer = () => {
     password: Yup.string().min(8, "Password minimum length should be 8").required("Required")
       .matches(/(?=.*[0-9])/, "Password must contain a number."),
 
-    shopurl: Yup.string()
-      .required("Required")
-      .matches(/((https?):\/\/)?(www.)?[a-z0-9-]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#-]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/, "Website should be a valid URL"),
-
-    phoneno: Yup.number().typeError("Enter valid Phone Number").required('Required'),
-
-    shopname: Yup.string()
-
-      .required("Required")
-      .min(3, "Too short Name"),
-
       user:Yup.string()
       .required("Required")
   })
@@ -137,7 +126,7 @@ const Customer = () => {
                           class="form-control"
                           type="text" placeholder="" 
                           disabled/>
-                        <div className="error"><ErrorMessage name="shopurl" /></div>
+                        
                       </div>
                     </div>
                     <div class="col-sm-6">
@@ -149,7 +138,7 @@ const Customer = () => {
                           class="form-control"
                           type="text" placeholder="" 
                           disabled/>
-                        <div className="error"><ErrorMessage name="phoneno" /></div>
+                        
                       </div>
                     </div>
                   </div>
@@ -161,7 +150,7 @@ const Customer = () => {
                         name="shopname"
                         class="form-control"
                         disabled/>
-                      <div className="error"><ErrorMessage name="shopname" /></div>
+                      
                     </div>
                   </div>
                 </div>

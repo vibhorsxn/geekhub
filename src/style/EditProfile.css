@@ -1,0 +1,160 @@
+.col-ting {
+    width: 25em;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  
+  .file-upload .image-box {
+    margin: 0 auto;
+    margin-top: 1em;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background: #ffb700;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .file-upload .image-box img {
+    height: 100%;
+    display: none;
+  }
+  .file-upload .image-box p {
+    position: relative;
+    top: 45%;
+    color: #fff;
+  }
+
+
+  /* Login start */
+
+  .loginwrap{
+	margin-top: 94px;
+}
+.pgaddressrow{
+	padding: 20px 0;
+	background-color: #f8f8f8;
+}
+.pgaddressrow h1.heading{
+	font-family: 'Raleway-SemiBold';
+	text-align: center;
+	font-size: 28px;
+	margin: 0;
+}
+.pgaddressrow h4.smheading{
+	text-align: center;
+	color: #666666;
+	font-size: 16px
+}
+.pgaddressrow h4.smheading a{
+	color: #666666;
+}
+.pgaddressrow h4.smheading a:hover{
+	color: #feb600;
+}
+.loginformCon{
+	max-width: 440px;
+	margin: 30px auto;
+}
+.loginformCon.signup{
+	max-width: 800px;
+	padding: 0 20px;
+	padding-bottom: 20px;
+}
+.loginformCon .form-group{
+	margin-bottom: 20px;
+}
+.profiledetailinputs{
+  max-width: 440px;
+  margin: 30px auto;
+}
+.profiledetailinputs.signup{
+  max-width: 800px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.profilinputs{
+  max-width: 1000px;
+  padding: 40px 50px;
+  margin: 30px auto;
+  background-color: #f8f8f8;
+}
+
+.loginformCon h4{
+	font-family: 'Raleway-SemiBold';
+	font-size: 18px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.loginformCon h2{
+	font-family: 'Raleway-SemiBold';
+	font-size: 44px;
+	margin: 0;
+}
+.loginforminputs{
+	padding-top: 50px;
+}
+.loginforminputs label{
+	font-size: 15px;
+	display: block;
+}
+.loginforminputs .form-control{
+	padding: 14px 12px;
+	height: auto;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #e2e2e2;
+	box-shadow: none;
+	background-color: transparent;
+}
+.loginforminputs textarea{
+	resize: none;
+}
+.loginbtnrow{
+	padding-top: 30px;
+}
+.loginbtnrow .loginbtn{
+	font-family: 'Raleway-Bold';
+	padding:10px 32px;
+	font-size: 18px;
+	color: #0c0c0c;
+	border-width: 2px solid;
+	border-color: transparent;
+	outline: none;
+	background-color: #feb600;
+}
+.loginbtnrow .loginbtn.wd100{
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+.loginbtnrow .loginbtn.sv_add{
+	padding:13px 64px;
+}
+.lostyourpasswordrw{
+	margin-top:30px;
+}
+.lostyourpasswordrw a{
+	font-family: 'Raleway-SemiBold';
+	position: relative;
+	font-size: 16px;
+	color: #282828;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transition: all 400ms linear;
+	transition: all 400ms linear;
+}
+.lostyourpasswordrw a:hover{
+	color:#feb600;
+}
+.signupterms{
+	font-family: 'Raleway-Medium';
+	font-size: 16px;
+	line-height: 32px;
+	color: #6d6d6d;
+}
+.signupterms a{
+	color: #feb600;
+	display: inline-block;
+}
+/*login end*/

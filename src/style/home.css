@@ -1,0 +1,23 @@
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.home{
+    width:50%;
+}
+
+.home img{
+    width: 170%;
+}
+
+/* Brand Logo */
+
+.brand__logo{
+   display: flex;
+   margin: 0% 10%;
+   padding: 7px 20%;
+}
+
+

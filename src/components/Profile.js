@@ -38,6 +38,16 @@ const Profile = () => {
           <h4 class="smheading"><a href="/home">Home</a> / profile / <a href=" )">Detail</a></h4>
         </div>
 
+{/* Edit profile button */}
+
+
+<div className="col-sm-2" style={{ textAlign: "right",marginLeft:"950px",fontStyle:"initial" }}>
+          <br/>
+          <button className="btn btn-warning"><a href="/editProfile" style={{color:"black",textDecoration:"none",fontWeight:"bold"}}>EDIT PROFILE</a></button>
+        </div>
+
+
+
         <div class="container">
 
           <div class="profilinputs">
@@ -49,6 +59,7 @@ const Profile = () => {
                 <div class="col-sm-4">
                   <div class="control-group file-upload" id="file-upload1">
                     <div class="image-box text-center">
+                      {/*  team-B API <p>{userData.profilePic}</p> */}
                       <p>{userData.profilePic}</p>
                       <img src="" alt=" " />
                     </div>
@@ -63,21 +74,30 @@ const Profile = () => {
                   <div class="nameconbox">
                     <h4>Name</h4>
 
+
+                    {/* Team-B API <p class="paratrxt">{userData.data.user.firstName} {userData.data.user.lastName}</p> */}
                     <p class="paratrxt">{userData.firstName} {userData.lastName}</p>
                   </div>
 
                   <div class="emailconbox">
                     <h4>Email ID</h4>
+                    {/* Team-B API <p class="paratrxt">{userData.data.user.email}</p> */}
                     <p class="paratrxt">{userData.email}</p>
                   </div>
                 </div>
-
-                <div class="col-sm-4">
-                  <div class="phoneconbox">
-                    <h4>Phone No</h4>
-                    <p class="paratrxt paranumar">91-7217643966</p>
-                  </div>
-                </div>
+                <br />
+                {/* <button className="btn btn-warning">
+                  <a
+                    href="/editProfile"
+                    style={{
+                      color: "black",
+                      textDecoration: "none",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Edit Profile
+                  </a>
+                </button> */}
               </div>
             </div>
           </div>

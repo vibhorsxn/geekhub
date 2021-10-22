@@ -1,0 +1,49 @@
+.profilinputs{
+    max-width: 1000px;
+    padding: 40px 50px;
+    margin: 30px auto;
+    background-color: #f8f8f8;
+  }
+  .loginbtnrow {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+  }
+  .loginbtnrowadd .loginbtnadd{
+      font-family: 'Raleway-Bold';
+      padding:13px 102px;
+      font-size: 12px;
+      color: #0c0c0c;
+      border-width: 2px solid;
+      border-color: transparent;
+      outline: none;
+      background-color: #feb600;
+      float: left;
+  }
+  .loginbtnrowadd{
+      padding-top: 60px;
+  }
+  
+  .addressnbtnadd{
+      margin-top: -70px;
+  float: right;
+          font-family: 'Raleway-Bold';
+      padding:10px 32px;
+      font-size: 18px;
+      color: #0c0c0c;
+      border-width: 2px solid;
+      border-color: transparent;
+      outline: none;
+      background-color: #feb600;
+  }
+  
+  .nameconbox{
+      padding-left: 40px;
+      padding-top: 7px;
+  }
+  .edittext{
+      font-family: 'Raleway-Bold';
+  }
+  .edittext span{
+      padding-left: 35px;
+  }

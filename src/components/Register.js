@@ -102,7 +102,7 @@ const Register = () => {
       <div class="pgaddressrow">
         <h1 class="heading">Login / Register</h1>
         <h4 class="smheading">
-          <a href="/">Home</a> / Login / <a href="/signup ">Register</a>
+          <a href="/home">Home</a> / Login / <a href="/signup ">Register</a>
         </h4>
       </div>
       <div class="loginformCon signup">

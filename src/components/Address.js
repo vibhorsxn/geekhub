@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useToken from "./useToken";
 import "../style/Address.css"
-import axios from 'axios';
 
 const Address = () => {
   const userToken = useToken();
@@ -38,7 +37,7 @@ const Address = () => {
 
       .catch((error) => console.warn(error));
     // empty dependency array means this effect will only run once (like componentDidMount in classes)
-  }, []);
+  }, );
 
   return (
     <div>

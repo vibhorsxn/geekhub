@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import useToken from './useToken';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import "../style/EditProfile.css";
 
 

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../style/Login.css";
-import { Formik, Field, Form, ErrorMessage } from "formik";
-import * as Yup from "yup";
-import axios from "axios";
+// import { Formik, Field, Form, ErrorMessage } from "formik";
+// import * as Yup from "yup";
+// import axios from "axios";
 
 const Forgot = () => {
   const [email, setEmail] = useState("");

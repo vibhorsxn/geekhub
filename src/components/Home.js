@@ -4,7 +4,7 @@ import "../style/home.css";
 import banner from "../assets/images/banimg.png";
 import "../style/Banner.css"
 // brand logo
-import { Col, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import dc from "../assets/images/brand_logo/dc-logo.png"
 
 
